@@ -29,7 +29,7 @@ namespace Assets.Scripts
 
         private void ShowTower(TowerUpgrade upgrade)
         {
-            if(shadow) DestroyImmediate(shadow);
+            if(shadow) DestroyImmediate(shadow.gameObject);
             shadow = new GameObject("Shadow Tower Place").AddComponent<ShadowTowerPlacer>();
             shadow.Tower = upgrade.tower;
             this.upgrade = upgrade;
@@ -42,7 +42,7 @@ namespace Assets.Scripts
                 var tower = Instantiate(shadow.Tower);
                 FindObjectOfType<Player>().Money -= upgrade.price;
                 tower.transform.position = shadow.transform.position;
-                DestroyImmediate(shadow);
+                DestroyImmediate(shadow.gameObject);
             }
         }
         private static bool IsPointerOverGameObject()
