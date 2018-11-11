@@ -38,11 +38,11 @@ namespace Assets.Scripts.Entities
                 if (alive)
                 {
                     alive = false;
+                    OnImpact(target);
                     if (stopOnImpact)
                     {
                         target = null;
                     }
-                    OnImpact(transform);
                     Destroy(gameObject, 2f);
                 }
             }
