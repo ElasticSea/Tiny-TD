@@ -23,6 +23,10 @@ namespace Assets.Scripts
             {
                 transform.DOLocalRotate(new Vector3(0, 0, 180), .5f, RotateMode.LocalAxisAdd).SetEase(Ease.InOutQuad);
             };
+            health.OnDeath += () =>
+            {
+                gameObject.AddComponent<GameOver>();
+            };
             StartCoroutine(HearthBeet());
 
         }

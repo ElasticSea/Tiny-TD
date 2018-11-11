@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+  money: 1
 --- !u!114 &114884962592396496
 MonoBehaviour:
   m_ObjectHideFlags: 1

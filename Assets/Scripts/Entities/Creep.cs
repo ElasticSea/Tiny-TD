@@ -8,10 +8,13 @@ namespace Assets.Scripts.Entities
     public class Creep : MonoBehaviour
     {
         [SerializeField] private float speed;
+        [SerializeField] private int money;
         private Vector3[] points;
         private int pathIndex;
 
         public Path Path { get; set; }
+
+        public int Money => money;
 
         public event Action OnPathFinished = () => {};
 

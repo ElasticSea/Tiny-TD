@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Assets.Scripts.Entities;
 using System.Linq;
+using UnityEngine;
 
 namespace Assets.Scripts
 {
@@ -20,6 +21,7 @@ namespace Assets.Scripts
             };
             c.GetComponent<Health>().OnDeath += () =>
             {
+                GameObject.FindObjectOfType<Player>().Money += c.Money;
                 creeps.Remove(c);
                 if (creeps.Any() == false)
                 {
