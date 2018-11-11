@@ -10,6 +10,8 @@ namespace Assets.Scripts.Entities
         [SerializeField] private Transform attackPosition;
         [SerializeField] private float range;
         [SerializeField] private float interval;
+        [SerializeField] private TowerUpgrade[] Upgrades;
+
         private float lastAttack;
 
         private void Update()

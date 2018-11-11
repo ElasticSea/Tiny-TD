@@ -23,8 +23,9 @@ GameObject:
   - component: {fileID: 135881758230711032}
   - component: {fileID: 23323161991059000}
   - component: {fileID: 114986412304995438}
+  - component: {fileID: 114740462245853678}
   m_Layer: 0
-  m_Name: Lightning 1
+  m_Name: Lightning 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,7 +89,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7b9eced9145ed064695985ff17da0216, type: 2}
+  - {fileID: 2100000, guid: d420afd3b011f104c9025325ae2175af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -115,6 +116,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1465935386307062}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114740462245853678
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1465935386307062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e3f0655c05d2ef4c8f021159c50f9a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 13
 --- !u!114 &114986412304995438
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -128,6 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   speed: 4
+  stopOnImpact: 0
 --- !u!135 &135881758230711032
 SphereCollider:
   m_ObjectHideFlags: 1

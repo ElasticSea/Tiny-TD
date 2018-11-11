@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114331029075108490}
   - component: {fileID: 65774379902797808}
   m_Layer: 0
-  m_Name: Tower
+  m_Name: Tower lvl2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,7 +52,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1859188206411378}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.301, z: 0}
+  m_LocalPosition: {x: 0, y: 1.143, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4930861186949246}
@@ -113,7 +113,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1291330856250852}
-  m_Mesh: {fileID: 4300000, guid: 0197fe4c5dcab8241a62f6aa46c41fdc, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 7dd396dc77ba1534dbf166c61e3452f8, type: 3}
 --- !u!65 &65774379902797808
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11cf9f89430bb1741ae7b8ad980f2f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 114986412304995438, guid: 2785ce549ece69647bf5485ee66582c0,
+  projectilePrefab: {fileID: 114986412304995438, guid: b22b4eae52ae72141bb308bd8f783527,
     type: 2}
   attackPosition: {fileID: 4830195948417294}
   range: 3
