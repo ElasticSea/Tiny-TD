@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23607289584293950}
   - component: {fileID: 114604426480393612}
   m_Layer: 0
-  m_Name: Cannon
+  m_Name: Cannon 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -129,3 +129,6 @@ MonoBehaviour:
   attackPosition: {fileID: 4534859691864754}
   range: 1
   interval: 3
+  upgrades:
+  - tower: {fileID: 114604426480393612, guid: 38335c3dd8cde7f4d95cde7a91c782d0, type: 2}
+    price: 13

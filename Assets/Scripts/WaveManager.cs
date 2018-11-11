@@ -10,35 +10,35 @@ namespace Assets.Scripts
         [SerializeField] private float creepInterval;
         [SerializeField] private int creeps;
 
-        [SerializeField] private Creep creepPrefab;
+        [SerializeField] private Creep[] creepPrefabs;
         [SerializeField] private Path path;
         private Wave wave;
+        private int waveNum;
 
         private void Awake()
         {
-            StartCoroutine(SpawnWave());
+            SpawnWave();
         }
 
-        private IEnumerator SpawnWave()
+        private void SpawnWave()
         {
             wave = new Wave();
             wave.OnDeath += () =>
             {
-                // TODO wave killed run the next wave
+                if (waveNum < creepPrefabs.Length)
+                {
+                    SpawnWave();
+                }
             };
 
-            StartCoroutine(SpawnCreep());
-
-            yield return new WaitForSeconds(waveInterval);
-
-            StartCoroutine(SpawnWave());
+            StartCoroutine(SpawnCreep(waveNum++));
         }
 
-        private IEnumerator SpawnCreep()
+        private IEnumerator SpawnCreep(int waveN)
         {
             for (int i = 0; i < creeps; i++)
             {
-                var creep = Instantiate(creepPrefab);
+                var creep = Instantiate(creepPrefabs[waveN]);
                 creep.Path = path;
                 wave.Add(creep);
                 yield return new WaitForSeconds(creepInterval);

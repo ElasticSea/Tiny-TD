@@ -142,3 +142,6 @@ MonoBehaviour:
   attackPosition: {fileID: 4830195948417294}
   range: 3
   interval: 1
+  upgrades:
+  - tower: {fileID: 114331029075108490, guid: e0b6e953ac17ef146ba040936521615f, type: 2}
+    price: 37

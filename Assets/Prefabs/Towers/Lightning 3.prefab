@@ -23,9 +23,9 @@ GameObject:
   - component: {fileID: 135881758230711032}
   - component: {fileID: 23323161991059000}
   - component: {fileID: 114986412304995438}
-  - component: {fileID: 114248478320248098}
+  - component: {fileID: 114740462245853678}
   m_Layer: 0
-  m_Name: Lightning
+  m_Name: Lightning 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 1465935386307062}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.75, z: -3.42}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 4766660710433300}
   m_Father: {fileID: 0}
@@ -89,7 +89,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7b9eced9145ed064695985ff17da0216, type: 2}
+  - {fileID: 2100000, guid: d420afd3b011f104c9025325ae2175af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -116,7 +116,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1465935386307062}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114248478320248098
+--- !u!114 &114740462245853678
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3f0655c05d2ef4c8f021159c50f9a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 18
+  damage: 162
 --- !u!114 &114986412304995438
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 4
+  speed: 6
   stopOnImpact: 0
 --- !u!135 &135881758230711032
 SphereCollider:

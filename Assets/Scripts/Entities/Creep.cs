@@ -28,6 +28,8 @@ namespace Assets.Scripts.Entities
         private static int whileLim = 1000;
         private void Update()
         {
+            if (points == null) return;
+
             var moveBudget = speed * Time.deltaTime;
             var i = 0;
             while (moveBudget > 0 && i < whileLim)
@@ -61,6 +63,7 @@ namespace Assets.Scripts.Entities
         private void DamagePlayer()
         {
             GameObject.FindObjectOfType<Player>().GetComponent<Health>().Damage(1);
+            GetComponent<Health>().Damage(float.MaxValue);
         }
     }
 }

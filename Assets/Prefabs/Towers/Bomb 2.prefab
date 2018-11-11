@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114270145480844828}
   - component: {fileID: 114622136121380668}
   m_Layer: 0
-  m_Name: Bomb
+  m_Name: Bomb 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -303,8 +303,8 @@ MonoBehaviour:
   particleSystemPrefab: {fileID: 198182284149204690, guid: 7914c540b7a80f946a741faa9f5a2527,
     type: 2}
   radiusImage: {fileID: 224317785349051098}
-  radius: 2
-  particleCount: 40
+  radius: 3
+  particleCount: 60
   cube: {fileID: 23763359246472244}
 --- !u!114 &114420214675776528
 MonoBehaviour:
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d50a6b3c3f3aa04797f6eab80aa6d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 27
   radius: 2
 --- !u!222 &222662251807747638
 CanvasRenderer:
